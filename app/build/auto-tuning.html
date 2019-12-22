@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Процесс Покупки</title>
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="" />
+    <meta property="fb:app_id" content="">
+    <meta name="csrf-token" content="">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/formstyler.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <div class="header__top">
+                <!--top navigation-->
+                <div class="container">
+                    <div class="logo">
+                        <a href="#"><img src="images/data/logo.png" alt=""></a>
+                    </div>
+                    <div class="header__zakaz-box">
+                        <a class="zakaz-box__zayavka" href="javascript:;" data-fancybox data-src="#popup-zayavka">Заявка
+                            на
+                            авто</a>
+                        <a class="zakaz-box__zvonok" href="javascript:;" data-fancybox data-src="#popup-zvonok">Заказать
+                            звонок</a>
+                    </div>
+                    <div class="header__phones">
+                        <div class="header__phones-box">
+                            <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+                            <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                    </div>
+                    <div class="header__dealer">
+                        <a href="#">Стать дилером</a>
+                    </div>
+                    <div class="header__nav">
+                        <div class="language-select">
+                            <a class="btn btn-link dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki"> Русский
+                                    </a>
+                                </li>
+                                <li><a href="/en/purchasing-process"> English
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="header__login">
+                            <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+                            <div class="user__box">
+                                <div class="user__photo">
+                                    <img src="images/data/user.jpg" alt="">
+                                </div>
+                                <ul class="user__menu">
+                                    <li><a href="#">Игорь Киклевич</a></li>
+                                    <li><a href="#">Мой гараж</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <a href="#" class="menu-toggle">Menu</a>
+                    </div>
+                </div>
+            </div>
+            <!--top navigation end-->
+            <!--main menu-->
+            <div class="header__bottom">
+                <div class="container">
+                    <ul class="main-menu list-unstyled">
+                        <li class="main-menu-item">
+                            <a href="#">Новые авто</a>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">Авто с пробегом</a>
+                            <ul class="main-submenu list-unstyled">
+                                <li class="main-submenu-item">
+                                    <a href="#">Авто с аукционов</a>
+                                </li>
+                                <li class="main-submenu-item">
+                                    <a href="#">Б/У авто в наличии</a>
+                                </li>
+                                <li class="main-submenu-item">
+                                    <a href="#">Последние продажи</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">Услуги</a>
+                            <ul class="main-submenu list-unstyled">
+                                <li class="main-submenu-item">
+                                    <a href="#">Авто с аукционов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Процесс покупки</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__search">
+                        <button class="search-toggle">
+                            <span class="icon search-icon"></span></button>
+                        <div class="search-popup">
+                            <div class="search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Поиск">
+                                    <input type="submit" value="" class="search-submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--main menu end-->
+            <!--mobile box-->
+            <div class="header__mobile-box">
+                <div>
+                    <div class="header__phones">
+                        <div class="header__phones-box">
+                            <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+                            <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                    </div>
+                    <div class="header__dealer">
+                        <a href="javascript:;" data-fancybox data-src="#modal">Стать дилером</a>
+                    </div>
+                    <div class="header__search">
+                        <form>
+                            <input type="text" class="search-input" placeholder="Поиск">
+                        </form>
+                    </div>
+                    <div class="header__nav">
+                        <div class="language-select">
+                            <a href="#" class="btn btn-link dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki">
+                                        Русский </a>
+                                </li>
+                                <li><a href="/en/purchasing-process">
+                                        English
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="header__login">
+                            <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+                            <div class="user__box">
+                                <div class="user__photo">
+                                    <img src="images/data/user.jpg" alt="">
+                                </div>
+                                <ul class="user__menu">
+                                    <li><a href="#">Игорь Киклевич</a></li>
+                                    <li><a href="#">Мой гараж</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile-menu">
+                        <ul class="main-menu list-unstyled">
+                            <li class="main-menu-item">
+                                <a href="#">Новые авто</a>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">Авто с пробегом</a>
+                                <ul class="main-submenu list-unstyled">
+                                    <li class="main-submenu-item">
+                                        <a href="#">Авто с аукционов</a>
+                                    </li>
+                                    <li class="main-submenu-item">
+                                        <a href="#">Б/У авто в наличии</a>
+                                    </li>
+                                    <li class="main-submenu-item">
+                                        <a href="#">Последние продажи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">Услуги</a>
+                                <ul class="main-submenu list-unstyled">
+                                    <li class="main-submenu-item">
+                                        <a href="#">Авто с аукционов</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Процесс покупки</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--mobile box end-->
+        </div>
+    </div>
+
+    <!-- top-block -->
+    <section class="top-block">
+        <div class="top-block__wrapper" style="background-image: url(images/data/tuning-preview-img.jpg)">
+            <div class="container">
+                <h1>Автотюнинг</h1>
+            </div>
+        </div>
+    </section><!-- top-block end -->
+
+    <main class="main tuning__main">
+        <section class="content tuning__content">
+            <section>
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li class="active"><a href="#">Автотюнинг</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="text-s">
+                <div class="container">
+                    <div class="about__title">
+                        АВТОТЮНИНГ ПИКАПОВ И ВНЕДОРОЖНИКОВ
+                    </div>
+                    <p>Компания AutoBazar.US уже много лет профилируется на тюнинге пикапов, внедорожников и джипов. Так
+                        случилось, что клиенты нашей компании, приобретающие у нас в США автомобили для России и стран
+                        СНГ
+                        стали просить установить дополнительные тюнинг аксессуары на приобретенные ими авто. Спрос
+                        рождает
+                        предложение! Мы долго изучали рынок дополнительного оборудования и аксессуаров для тюнинга,
+                        нашли
+                        самых лучших поставщиков, и вот уже более 5 лет мы реализуем различные тюнинг-проекты на базе
+                        Ford
+                        F-150 Raptor, RAM 1500, Jeep Wrangler и другие.
+                    </p>
+                    <p>Также мы предлагаем нашим клиентам поставку тюнинг-аксессуаров, дополнительного оборудования и
+                        оригинальных запасных частей отдельно от покупки автомобиля.
+                    </p>
+                    <ul class="type-content">
+                        <li>тюнинг внедорожников</li>
+                        <li>тюнинг джипов</li>
+                        <li>тюнинг подвески</li>
+                        <li>любой внешний тюнинг</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="tuning__kinds">
+                <div class="container">
+                    <div class="about__title">
+                        Виды тюнинга
+                    </div>
+                </div>
+                <div class="tuning__kinds-box">
+                    <div class="tuning__kinds-img">
+                        <img src="images/data/tuning-1.png" srcset="images/data/tuning-1.webp" alt="">
+                    </div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                    <div class="tuning__kinds-item"><span>Дефлекторы</span></div>
+                </div>
+            </section>
+            <section class="tuning__projects">
+                <div class="container">
+                    <div class="about__title">
+                        последние тюнинг проекты
+                    </div>
+                    <div class="tuning__projects-items">
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-4.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-5.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""> <a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-4.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-5.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tuning__projects-pagination">
+                        <ul>
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="tuning__video landing__video">
+                <div class="container">
+                    <div class="about__title">
+                        Смотрите наши тюнинг проекты на youtube
+                    </div>
+                    <div class="landing__video-box">
+                        <a class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"></a><img
+                            src="images/data/tuning-video.jpg" alt="">
+                    </div>
+                    <div class="show-more"><a href="#">Подписаться на канал</a></div>
+                </div>
+            </section>
+            <section class="homepage__preim tuning__preim bg_gray">
+                <div class="container">
+                    <div class="about__title">
+                        почему стоит выбрать нас?
+                    </div>
+                    <div class="homepage__preim-items">
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/tuning-icon-1.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Опыт более 17 лет</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/tuning-icon-2.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Собственный
+                                автосервис в США</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/expirience-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Индивидуальный
+                                подход</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/money-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Самые конкурентные
+                                предложения</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/money-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Запчасти и аксессуары
+                                для тюнинга</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/tuning-icon-3.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Более 100
+                                выполненых проектов</div>
+                        </div>
+                    </div>
+                    <div class="show-more"><a href="#">Узнать подробнее</a></div>
+                </div>
+            </section>
+            <section class="about__clients tuning__clients">
+                <div class="container">
+                    <div class="about__clients-box">
+                        <div class="about__clients-left">
+                            <div class="about__clients-left-box">
+                                <div class="about__clients-left-item"><img src="images/data/client-1.jpg" alt=""></div>
+                                <div class="about__clients-left-item"><img src="images/data/client-2.jpg" alt=""></div>
+                                <div class="about__clients-left-item"><img src="images/data/client-3.jpg" alt=""></div>
+                                <div class="about__clients-left-item"><img src="images/data/client-4.jpg" alt=""></div>
+                                <div class="about__clients-left-item"><img src="images/data/client-5.jpg" alt=""></div>
+                                <div class="about__clients-left-item"><img src="images/data/client-6.jpg" alt=""></div>
+                            </div>
+                            <div class="about__clients-left-column">
+                                <p>Но главным нашим <span>достижением</span> мы считаем наших довольных клиентов.</p>
+                                <p>Мы <span>гордимся</span> тем, что нам удается столько времени радовать наших
+                                    покупателей.
+                                </p>
+                                <p>С каждым годом мы стремимся становится только лучше именно для вас. </p>
+                                <p>Отзывы наших клиентов <span>100% достоверные</span>.</p>
+                                <p>Это далеко не полный список, но это все абсолютно <span>реальные</span> люди и мы
+                                    можем связать Вас практически с каждым из них.</p>
+                            </div>
+                        </div>
+                        <div class="about__clients-right">
+                            <div class="about__clients-right-column">
+                                <p>Вы можете запросить контакты 3-5 любых наших клиентов, и мы предоставим вам их
+                                    контактную информацию, чтобы подтвердить их достоверность.</p>
+                                <p>Наши клиенты позволяют нам давать их контактную информацию новым покупателям, и мы им
+                                    за это очень <span>благодарны.</span> </p>
+                                <p>Надеемся, что эта информация поможет вам сделать <span>правильный</span> выбор при
+                                    выборе поставщика автомобиля из США и Канады.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="show-more">
+                            <a href="#">Перейти в раздел</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="page-bottom">
+                <div class="container">
+                    <div class="about__title">
+                        Задайте свой вопрос
+                    </div>
+                    <div class="page-bottom-subtitle">
+                        Задайте нам вопрос и мы в кротчайшие сроки свяжемся с Вами.
+                    </div>
+                    <div class="page-bottom-button">
+                        <a href="javascript:;" data-fancybox data-src="#popup-zvonok">Задать вопрос</a>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <a href="#" class="footer-logo"><img src="images/data/logo.png" alt=""></a>
+                </div>
+                <div class="footer__socials-box">
+                    <ul class="footer-socials list-unstyled list-inline">
+                        <li><a href="https://twitter.com/AutoBazarUs" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-twitter-icon.png" alt=""></a></li>
+                        <li><a href="http://www.youtube.com/subscription_center?add_user=autobazarus" class="soc-link"
+                                target="blank"><img src="images/icons/footer-youtube-icon.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/autobazar.ru" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-vk-icon.png" alt=""></a></li>
+                        <li><a href="http://vk.com/autobazargroup" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-fb-icon.png" alt=""></a></li>
+                        <li><a href="https://plus.google.com/+autobazarus/posts" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-instagram-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__sitemap">
+                    <a href="#">Карта сайта</a>
+                    <a href="javascript:;" data-fancybox data-src="#modal">Стать диллером</a>
+                </div>
+                <div class="footer__search">
+                    <form>
+                        <input type="text" class="search-input" placeholder="Поиск">
+                    </form>
+                    <div class="footer-languages">
+                        <div class="language-select">
+                            <a class="dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki">Русский </a>
+                                </li>
+                                <li><a href="/en/purchasing-process"> English
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2002-2019 AutoBazar.US
+        </div>
+    </footer>
+
+    <!--модальные окна-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="login">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Вход</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" value="Вход">
+                                    <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#reg"
+                                        class="dashed"
+                                        onclick="javascript:parent.jQuery.fancybox.close();">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group fg-flex">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="check">
+                                        <label><input type="checkbox"> запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="text-right"><a href="javascript:parent.jQuery.fancybox.close();"
+                                            data-fancybox data-src="#forget" class="dashed"
+                                            onclick="javascript:parent.jQuery.fancybox.close();">Забыли пароль</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="reg">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Регистрация</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Имя" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль еще раз" class="form-control">
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" class="btn btn-solid btn-primary btn-inline btn2"
+                                        value="Регистрация">
+                                    <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#login"
+                                        class="dashed" onclick="javascript:parent.jQuery.fancybox.close();">Войти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="forget">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Напоминание пароля</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" value="Отправить">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <section class="page-bottom__contacts-form  modal" id="popup-zayavka">
+        <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+        <div class="container">
+            <div class="about__title">
+                Заказать обратный звонок
+            </div>
+            <div class="page-bottom-subtitle">
+                Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+                консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+                Спасибо за обращение в нашу компанию.
+            </div>
+            <div class="contacts-form__box">
+                <form>
+                    <div class="contacts-form__box-left">
+                        <input type="text" placeholder="Имя*">
+                        <input type="text" placeholder="Номер телефона*">
+                        <input type="text" placeholder="E-mail*">
+                        <input type="text" placeholder="Skype">
+                    </div>
+                    <div class="contacts-form__box-right">
+                        <textarea placeholder="Вопрос*"></textarea>
+                        <input type="text" placeholder="Recaptcha">
+                        <button class="btn-form">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="page-bottom__contacts-form  modal" id="popup-zvonok">
+        <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+        <div class="container">
+            <div class="about__title">
+                Задать вопрос
+            </div>
+            <div class="page-bottom-subtitle">
+                Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+                консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+                Спасибо за обращение в нашу компанию.
+            </div>
+            <div class="contacts-form__box">
+                <form>
+                    <div class="contacts-form__box-left">
+                        <input type="text" placeholder="Имя*">
+                        <input type="text" placeholder="Номер телефона*">
+                        <input type="text" placeholder="E-mail*">
+                        <input type="text" placeholder="Skype">
+                    </div>
+                    <div class="contacts-form__box-right">
+                        <textarea placeholder="Вопрос*"></textarea>
+                        <input type="text" placeholder="Recaptcha">
+                        <button class="btn-form">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="menu-cover"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/manheim/index.js"></script> -->
+    <!-- <script src="js/lib/prototype.js"></script> -->
+
+</body>

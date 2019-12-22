@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Процесс Покупки</title>
+    <meta name="keywords" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="" />
+    <meta property="fb:app_id" content="">
+    <meta name="csrf-token" content="">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/fotorama.css">
+    <link rel="stylesheet" href="css/fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="stylesheet" href="css/formstyler.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="header__top">
+                <!--top navigation-->
+                <div class="container">
+                    <div class="logo">
+                        <a href="#"><img src="images/data/logo.png" alt=""></a>
+                    </div>
+                    <div class="header__zakaz-box">
+                        <a class="zakaz-box__zayavka" href="javascript:;" data-fancybox data-src="#popup-zayavka">Заявка
+                            на
+                            авто</a>
+                        <a class="zakaz-box__zvonok" href="javascript:;" data-fancybox data-src="#popup-zvonok">Заказать
+                            звонок</a>
+                    </div>
+                    <div class="header__phones">
+                        <div class="header__phones-box">
+                            <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+                            <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                    </div>
+                    <div class="header__dealer">
+                        <a href="#">Стать дилером</a>
+                    </div>
+                    <div class="header__nav">
+                        <div class="language-select">
+                            <a class="btn btn-link dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki"> Русский
+                                    </a>
+                                </li>
+                                <li><a href="/en/purchasing-process"> English
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="header__login">
+                            <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+                            <div class="user__box">
+                                <div class="user__photo">
+                                    <img src="images/data/user.jpg" alt="">
+                                </div>
+                                <ul class="user__menu">
+                                    <li><a href="#">Игорь Киклевич</a></li>
+                                    <li><a href="#">Мой гараж</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile">
+                        <a href="#" class="menu-toggle">Menu</a>
+                    </div>
+                </div>
+            </div>
+            <!--top navigation end-->
+            <!--main menu-->
+            <div class="header__bottom">
+                <div class="container">
+                    <ul class="main-menu list-unstyled">
+                        <li class="main-menu-item">
+                            <a href="#">Новые авто</a>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">Авто с пробегом</a>
+                            <ul class="main-submenu list-unstyled">
+                                <li class="main-submenu-item">
+                                    <a href="#">Авто с аукционов</a>
+                                </li>
+                                <li class="main-submenu-item">
+                                    <a href="#">Б/У авто в наличии</a>
+                                </li>
+                                <li class="main-submenu-item">
+                                    <a href="#">Последние продажи</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">Услуги</a>
+                            <ul class="main-submenu list-unstyled">
+                                <li class="main-submenu-item">
+                                    <a href="#">Авто с аукционов</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Процесс покупки</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Доставка</a>
+                        </li>
+                        <li class="main-menu-item with-submenu">
+                            <a href="#">О нас</a>
+                        </li>
+                        <li class="main-menu-item">
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="header__search">
+                        <button class="search-toggle">
+                            <span class="icon search-icon"></span></button>
+                        <div class="search-popup">
+                            <div class="search">
+                                <form>
+                                    <input type="text" name="search" placeholder="Поиск">
+                                    <input type="submit" value="" class="search-submit">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--main menu end-->
+            <!--mobile box-->
+            <div class="header__mobile-box">
+                <div>
+                    <div class="header__phones">
+                        <div class="header__phones-box">
+                            <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+                            <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+                        </div>
+                    </div>
+                    <div class="header__social">
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                        <a href="#" target="blank"></a>
+                    </div>
+                    <div class="header__dealer">
+                        <a href="javascript:;" data-fancybox data-src="#modal">Стать дилером</a>
+                    </div>
+                    <div class="header__search">
+                        <form>
+                            <input type="text" class="search-input" placeholder="Поиск">
+                        </form>
+                    </div>
+                    <div class="header__nav">
+                        <div class="language-select">
+                            <a href="#" class="btn btn-link dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki">
+                                        Русский </a>
+                                </li>
+                                <li><a href="/en/purchasing-process">
+                                        English
+                                    </a></li>
+                            </ul>
+                        </div>
+                        <div class="header__login">
+                            <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+                            <div class="user__box">
+                                <div class="user__photo">
+                                    <img src="images/data/user.jpg" alt="">
+                                </div>
+                                <ul class="user__menu">
+                                    <li><a href="#">Игорь Киклевич</a></li>
+                                    <li><a href="#">Мой гараж</a></li>
+                                    <li><a href="#">Выход</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__mobile-menu">
+                        <ul class="main-menu list-unstyled">
+                            <li class="main-menu-item">
+                                <a href="#">Новые авто</a>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">Авто с пробегом</a>
+                                <ul class="main-submenu list-unstyled">
+                                    <li class="main-submenu-item">
+                                        <a href="#">Авто с аукционов</a>
+                                    </li>
+                                    <li class="main-submenu-item">
+                                        <a href="#">Б/У авто в наличии</a>
+                                    </li>
+                                    <li class="main-submenu-item">
+                                        <a href="#">Последние продажи</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">Услуги</a>
+                                <ul class="main-submenu list-unstyled">
+                                    <li class="main-submenu-item">
+                                        <a href="#">Авто с аукционов</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Процесс покупки</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Доставка</a>
+                            </li>
+                            <li class="main-menu-item with-submenu">
+                                <a href="#">О нас</a>
+                            </li>
+                            <li class="main-menu-item">
+                                <a href="#">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--mobile box end-->
+        </div>
+    </header>
+
+    <!-- top-block -->
+    <section class="top-block">
+        <div class="top-block__wrapper" style="background-image: url(images/data/dom-preview-img.jpg)">
+            <div class="container">
+                <h1>Дома на колесах</h1>
+            </div>
+        </div>
+    </section><!-- top-block end -->
+
+    <main class="main trailer__main">
+        <section class="content trailer__content">
+            <section>
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li><a href="#">Главная</a></li>
+                            <li class="active"><a href="#">Дома на колесах</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="text-s trailer__intro">
+                <div class="container">
+                    <div class="about__title">
+                        купить дом на колесах (rv) из Сша
+                    </div>
+                    <p>Купить дом на колёсах – мечта любого кемпера. Автодом позволяет вам расширить границы ваших
+                        путешествий. С кемпером вы не будете привязаны к расписаниям поездов, самолетов, наличием
+                        билетов в кассах и свободных номеров в гостиницах.
+                    </p>
+                    <p>В домах на колёсах есть всё необходимое для комфортного пребывания и отдыха во время дальних
+                        поездок.
+                    </p>
+                    <p>Компания AutoBazar.US уже почти 20 лет осуществляет поставку RV-кемперов из США по всему миру.
+                        Если Вы желаете приобрести автодом для себя или для своего бизнеса, специалисты нашей компании
+                        окажут вам квалифицированную помощь в покупке.</p>
+                    <p>Оставьте заявку на бесплатную консультацию, и наш специалист свяжется с вами в ближайшее время.
+                    </p>
+                    <div class="show-more"><a href="#">Задать вопрос</a></div>
+                </div>
+            </section>
+            <section class="homepage__preim trailer__preim tuning__preim bg_gray">
+                <div class="container">
+                    <div class="about__title">
+                        почему стоит выбрать нас?
+                    </div>
+                    <div class="homepage__preim-items">
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/tuning-icon-1.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Опыт<br> более 17 лет</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/reviews-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Более 100 реальных
+                                отзывов</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/expirience-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Индивидуальный
+                                подход</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/money-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Самые конкурентные
+                                предложения</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/location-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Доставка по всему
+                                миру</div>
+                        </div>
+                        <div class="homepage__preim-item">
+                            <div class="homepage__preim-icon">
+                                <img src="images/icons/cars-icon.png" alt="">
+                            </div>
+                            <div class="homepage__preim-text">Широкий<br>
+                                ассортимент</div>
+                        </div>
+                    </div>
+                    <div class="show-more"><a href="#">Узнать подробнее</a></div>
+                </div>
+            </section>
+            <section class="tuning__projects trailer__projects">
+                <div class="container">
+                    <div class="about__title">
+                        последние ПРОДАННЫЕ дома на колёсах
+                    </div>
+                    <div class="tuning__projects-items">
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-4.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-5.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""> <a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-4.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-5.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-2.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                        <div class="tuning__projects-item">
+                            <div class="tuning__projects-item-img"><img src="images/data/tuning-3.jpg" alt=""><a
+                                    href="#"></a></div>
+                            <div class="tuning__projects-item-content">
+                                <div class="tuning__projects-item-title">2014 Harley-Davidson </div>
+                                <div class="tuning__projects-item-price">$49900</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trailer__classifield">
+                <div class="container">
+                    <div class="about__title">
+                        классификация домов на колесах
+                    </div>
+                    <p>Изначально кажется, что есть великое множество различныx RV, но когда начинаешь разбираться, то
+                        понимаешь, что есть всего 2 большие категории домов на колесах: Моторизованные Автодома и
+                        Буксируемые жилые прицепы. </p>
+                    <div class="trailer__classifield-items">
+                        <div class="trailer__classifield-item"><img src="images/icons/class-1.png" alt=""><span>Class
+                                A</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-2.png" alt=""><span>Class
+                                B</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-3.png" alt=""><span>Class
+                                C</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-4.png" alt=""><span>Pop
+                                Ups</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-5.png" alt=""><span>Travel
+                                Trailes</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-6.png" alt=""><span>Fifth
+                                Wheels</span></div>
+                        <div class="trailer__classifield-item"><img src="images/icons/class-7.png" alt=""><span>Truck
+                                Camp</span></div>
+                    </div>
+                </div>
+            </section>
+            <section class="trailer__info landing__blog">
+                <div class="container">
+                    <div class="about__title">
+                        Моторизованные Автодома
+                    </div>
+                    <p>Это самоходные средства, на которых вы можете ездить или даже жить в них. В Америке сушествует
+                        всего 3 класса RV – А, В и С.</p>
+                    <p>Самое странное в их классификации то, что они переходят от самого большого - класса A - к самому
+                        маленькому - классу B, а только потом к среднему размеру С. Какой в этом смысл? Непонятно. Тем
+                        не менее, так оно и есть. Так что это нужно просто запомнить.</p>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">RV Класс A (Самый большой класс)</div>
+                            <div class="landing__blog-item-text">Эти автодома относятся к премиум классу. Водительская
+                                кабина интегрированных домов на колесах полностью интегрирована в жилую часть.
+                                Визуального разделения между этими частями нет. Интегрированные модели отличаются
+                                увеличенными габаритами (от 6.5м-13.7м), а также увеличенной грузоподъемностью. Для
+                                управления таким автодомом необходима категория прав «С». Эти автодома отличаются
+                                уникальным дизайном и особым уровнем комфорта. Представители этого класса отлично
+                                подходят для длительных поездок. В них с комфортом могут разместиться до 8 человек. В то
+                                же время большие габариты требуют большого пространства для парковки, и данный
+                                автомобиль неудобно эксплуатировать в городе.</div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">RV Класс B (Компактный класс) </div>
+                            <div class="landing__blog-item-text">Самый компактный дом на колесах. Отличный выбор
+                                благодаря цене, универсальности и простоте эксплуатации. Обычно укомлектован кухонным
+                                оборудованием, небольшим холодильником, отоплением, спальными местами, иногда отдельным
+                                санузлом и резервуаром с пресной водой. С комфортом вмещает до 4 человек. Имеет габариты
+                                от 5.2 м до 5.8 м. Может использоваться как городской автомобиль. Не очень подходит для
+                                длительныз поездок, из-за ограничености пространства.</div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-2.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">RV Класс C (Средний класс) </div>
+                            <div class="landing__blog-item-text">Вцелом представляют собой уменьшенную версию дома на
+                                колесах класса А. Чаще всего это специально переоборудованные минивэны. Скорее всего,
+                                спальные помещения будут расположены над кабиной, а также еще одним задним сиденьем
+                                (выдвижная функция), которая позволяет увеличить жилое пространство. Обычно оснащены
+                                многими из тех же функций, что и их более крупные аналоги, такие как холодильник,
+                                кухонное оборудование, автономный туалет, а также множество приборов и развлекательного
+                                оборудования. Системы жизнеобеспечения включают: систему отопления, систему
+                                водоснабжения, систему электроснабжения и газоснабжения. С комфортом вмещает до 8
+                                спальных мест. Размер: от 6 до 9.5 метров в длину. Данные дома также называют жилой
+                                минивэн, кастенваген.</div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-3.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="trailer__info bg_gray landing__blog">
+                <div class="container">
+                    <div class="about__title">
+                        БУКСИРУЕМЫЕ ЖИЛЫЕ ПРИЦЕПЫ
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">ЖИЛОЙ ПРИЦЕП (RV TRAVEL TRAILERS) </div>
+                            <div class="landing__blog-item-text">Для буксировки трейлера требуется транспортное
+                                средство, такое как внедорожник, пикап или фургон, и специальное сцепное устройство,
+                                которое контролирует колебания прицепа во время движения. Обычно в таких трейлерах
+                                предоставлены все жизненные удобства, которые есть в моторизованных классах RV. Вмещает
+                                до 8 спальных мест, в зависимости от модели и комплектации и бывает от 3 до 11 м в
+                                длину. </div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-4.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">«ПЯТИКОЛЁСНЫЕ» ТРЕЙЛЕРЫ (Fifth-Wheel Trailer RV
+                                Classes) </div>
+                            <div class="landing__blog-item-text">Классы RV с прицепом с пятым колесом получили свое
+                                название, потому что у них есть передняя часть, которая проходит над буксирующим
+                                транспортным средством и заканчивается пластиной, которая выглядит как другое колесо.
+                                «Колесо» крепится к кабине полноразмерного пикапа, который его буксирует. При
+                                использовании пятого колеса важно иметь правильный буксирный автомобиль. Внутри этих
+                                прицепов класса RV достаточно места, а некоторые часто включают выдвижные выдвижные
+                                ящики для увеличения жилой площади. Обычно включает в себя спальню, гостиную, кухню и
+                                ванную комнату. Поскольку эти прицепы обеспечивают наилучшие домашние удобства, то это
+                                отличный выбор, если вы находитесь в одном месте в течение длительного периода времени.
+                            </div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">ПРИЦЕП-ПАЛАТКА (RV CLASS FOLDING TRAILERS (POP-UP)
+                            </div>
+                            <div class="landing__blog-item-text">Это самый маневренный и недорогой тип жилых прицепов.
+                                Несмотря на небольшие размеры, прицеп-палатка делает отдых путешественника комфортным.
+                                Прицеп-палатку можно транспортировать небольшими легковыми машинами. Для управления
+                                автомобилем с прицеп-палаткой достаточно прав категории В. Современные прицеп-палатки
+                                оснащены специальным механизмом, который позволяет открыть её за несколько минут.
+                                Благодаря складному механизму палатка занимает относительно немного места и её легко
+                                хранить.</div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-6.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="landing__blog-item">
+                        <div class="landing__blog-item-left">
+                            <div class="landing__blog-item-title">ЖИЛОЙ МОДУЛЬ ДЛЯ ПИКАПА ( TRUCK CAMPER) </div>
+                            <div class="landing__blog-item-text">Это жилой прицеп, который крепится к пикапу.
+                                Преимущество такого типа кемперов заключается в его мобильности. При необходимости жилой
+                                модуль можно снять с пикапа. Этот тип прицепа очень распространен среди тех, кто любит
+                                часто проводить уикенды на природе и путешествовать по бездорожью. В обычное время пикап
+                                можно использовать как повседневную машину, на время отдыха к ней легко крепится жилой
+                                отсек, в котором находится кровать, кухонный блок, зачастую саунзел. В зависимости от
+                                размера и модели в жилом модуле могут разместиться до шести человек.</div>
+                        </div>
+                        <div class="landing__blog-item-right">
+                            <img src="images/data/home-7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-s">
+                <div class="container">
+                    <div class="about__title">
+                        КАКИЕ ВОПРОСЫ НУЖНО УЧИТЫВАТЬ ПРИ ВЫБОРЕ ДОМА НА КОЛЁСАХ?
+                    </div>
+                    <p>Каждый дом на колёсах обладает уникальными качествами, которые предлагают путешественникам
+                        инструменты для невероятного отдыха. </p>
+                    Выбрать подходящий класс автодома лежит на основе этих ключевых факторов:
+                    <ul class="type-content">
+                        <li>Сколько путешественников планируется перевозить (людей, нуждающихся в спальных местах)?</li>
+                        <li>Дальность планируемых поездок, а также посещение многих мест или пребывание в одном месте в
+                            течение длительного периода времени?</li>
+                        <li>Бюджет?</li>
+                        <li>Наличие автомобиля для буксировки трейлера?</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="page-bottom">
+                <div class="container">
+                    <div class="about__title">
+                        Не нашли то, что искали?
+                    </div>
+                    <div class="page-bottom-subtitle">
+                        Отправьте нам заявку, мы в кротчайшие сроки подберем варианты и свяжемся с Вами.
+                    </div>
+                    <div class="page-bottom-form-box">
+                        <form>
+                            <input type="text" placeholder="ФИО*">
+                            <input type="text" placeholder="Номер телефона*">
+                            <input type="text" placeholder="E-mail*">
+                            <button class="btn-form" data-fancybox data-src="#modal" onclick="javascript:;">
+                                Отправить заявку
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <div class="footer__logo">
+                    <a href="#" class="footer-logo"><img src="images/data/logo.png" alt=""></a>
+                </div>
+                <div class="footer__socials-box">
+                    <ul class="footer-socials list-unstyled list-inline">
+                        <li><a href="https://twitter.com/AutoBazarUs" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-twitter-icon.png" alt=""></a></li>
+                        <li><a href="http://www.youtube.com/subscription_center?add_user=autobazarus" class="soc-link"
+                                target="blank"><img src="images/icons/footer-youtube-icon.png" alt=""></a></li>
+                        <li><a href="https://www.facebook.com/autobazar.ru" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-vk-icon.png" alt=""></a></li>
+                        <li><a href="http://vk.com/autobazargroup" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-fb-icon.png" alt=""></a></li>
+                        <li><a href="https://plus.google.com/+autobazarus/posts" class="soc-link" target="blank"><img
+                                    src="images/icons/footer-instagram-icon.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__sitemap">
+                    <a href="#">Карта сайта</a>
+                    <a href="javascript:;" data-fancybox data-src="#modal">Стать диллером</a>
+                </div>
+                <div class="footer__search">
+                    <form>
+                        <input type="text" class="search-input" placeholder="Поиск">
+                    </form>
+                    <div class="footer-languages">
+                        <div class="language-select">
+                            <a class="dropdown-toggle dropdownMenu1">
+                                Русский </a>
+                            <ul class="languages-list">
+                                <li><a href="/ru/process-pokupki">Русский </a>
+                                </li>
+                                <li><a href="/en/purchasing-process"> English
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2002-2019 AutoBazar.US
+        </div>
+    </footer>
+
+    <!--модальные окна-->
+    <div class="modal fade" tabindex="-1" role="dialog" id="login">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Вход</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" value="Вход">
+                                    <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#reg"
+                                        class="dashed"
+                                        onclick="javascript:parent.jQuery.fancybox.close();">Регистрация</a>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group fg-flex">
+                            <div class="row">
+                                <div class="col-xs-6">
+                                    <div class="check">
+                                        <label><input type="checkbox"> запомнить меня</label>
+                                    </div>
+                                </div>
+                                <div class="col-xs-6">
+                                    <div class="text-right"><a href="javascript:parent.jQuery.fancybox.close();"
+                                            data-fancybox data-src="#forget" class="dashed"
+                                            onclick="javascript:parent.jQuery.fancybox.close();">Забыли пароль</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="reg">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Регистрация</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Имя" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Пароль еще раз" class="form-control">
+                        </div>
+                        <br />
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" class="btn btn-solid btn-primary btn-inline btn2"
+                                        value="Регистрация">
+                                    <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#login"
+                                        class="dashed" onclick="javascript:parent.jQuery.fancybox.close();">Войти</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" tabindex="-1" role="dialog" id="forget">
+        <div class="modal-dialog " role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="about__title">Напоминание пароля</div>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="E-mail" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <div class="container-fluid">
+                                <div class="row text-center">
+                                    <input type="submit" value="Отправить">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <section class="page-bottom__contacts-form  modal" id="popup-zayavka">
+        <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+        <div class="container">
+            <div class="about__title">
+                Заказать обратный звонок
+            </div>
+            <div class="page-bottom-subtitle">
+                Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+                консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+                Спасибо за обращение в нашу компанию.
+            </div>
+            <div class="contacts-form__box">
+                <form>
+                    <div class="contacts-form__box-left">
+                        <input type="text" placeholder="Имя*">
+                        <input type="text" placeholder="Номер телефона*">
+                        <input type="text" placeholder="E-mail*">
+                        <input type="text" placeholder="Skype">
+                    </div>
+                    <div class="contacts-form__box-right">
+                        <textarea placeholder="Вопрос*"></textarea>
+                        <input type="text" placeholder="Recaptcha">
+                        <button class="btn-form">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="page-bottom__contacts-form  modal" id="popup-zvonok">
+        <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+        <div class="container">
+            <div class="about__title">
+                Задать вопрос
+            </div>
+            <div class="page-bottom-subtitle">
+                Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+                консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+                Спасибо за обращение в нашу компанию.
+            </div>
+            <div class="contacts-form__box">
+                <form>
+                    <div class="contacts-form__box-left">
+                        <input type="text" placeholder="Имя*">
+                        <input type="text" placeholder="Номер телефона*">
+                        <input type="text" placeholder="E-mail*">
+                        <input type="text" placeholder="Skype">
+                    </div>
+                    <div class="contacts-form__box-right">
+                        <textarea placeholder="Вопрос*"></textarea>
+                        <input type="text" placeholder="Recaptcha">
+                        <button class="btn-form">Отправить заявку</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <div class="menu-cover"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/fotorama.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/fancybox.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/manheim/index.js"></script> -->
+    <!-- <script src="js/lib/prototype.js"></script> -->
+
+</body>
