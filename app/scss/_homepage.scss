@@ -56,10 +56,13 @@ body .homepage__slider-item {
 
 .homepage__last-products-tabs-content {
     margin-bottom: 50px;
-    display: none;
+    transform:scale(0) ;
+    height: 0;
+    
 
     &.active-tab {
-        display: block;
+        transform:scale(1);
+        height: auto;
     }
 }
 
