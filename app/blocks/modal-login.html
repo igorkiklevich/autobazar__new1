@@ -1,0 +1,100 @@
+<!--модальные окна-->
+<div class="modal fade" tabindex="-1" role="dialog" id="login">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="about__title">Вход</div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row text-center">
+                                <input type="submit" value="Вход">
+                                <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#reg"
+                                    class="dashed"
+                                    onclick="javascript:parent.jQuery.fancybox.close();">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-group fg-flex">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="check">
+                                    <label><input type="checkbox"> запомнить меня</label>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="text-right"><a href="javascript:parent.jQuery.fancybox.close();"
+                                        data-fancybox data-src="#forget" class="dashed"
+                                        onclick="javascript:parent.jQuery.fancybox.close();">Забыли пароль</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="reg">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="about__title">Регистрация</div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Имя" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" placeholder="Пароль еще раз" class="form-control">
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row text-center">
+                                <input type="submit" class="btn btn-solid btn-primary btn-inline btn2"
+                                    value="Регистрация">
+                                <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#login"
+                                    class="dashed" onclick="javascript:parent.jQuery.fancybox.close();">Войти</a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade" tabindex="-1" role="dialog" id="forget">
+    <div class="modal-dialog " role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="about__title">Напоминание пароля</div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="E-mail" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <div class="container-fluid">
+                            <div class="row text-center">
+                                <input type="submit" value="Отправить">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
