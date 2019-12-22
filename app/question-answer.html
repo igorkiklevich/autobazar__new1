@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>Процесс Покупки</title>
+  <meta name="keywords" content="">
+  <meta property="og:title" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:image" content="" />
+  <meta property="fb:app_id" content="">
+  <meta name="csrf-token" content="">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/fotorama.css">
+  <link rel="stylesheet" href="css/fancybox.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/libs.css">
+  <link rel="stylesheet" href="css/formstyler.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="nav">
+      <div class="header__top">
+        <!--top navigation-->
+        <div class="container">
+          <div class="logo">
+            <a href="#"><img src="images/data/logo.png" alt=""></a>
+          </div>
+          <div class="header__zakaz-box">
+            <a class="zakaz-box__zayavka" href="javascript:;" data-fancybox data-src="#popup-zayavka">Заявка на
+              авто</a>
+            <a class="zakaz-box__zvonok" href="javascript:;" data-fancybox data-src="#popup-zvonok">Заказать
+              звонок</a>
+          </div>
+          <div class="header__phones">
+            <div class="header__phones-box">
+              <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+              <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+            </div>
+          </div>
+          <div class="header__social">
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+          </div>
+          <div class="header__dealer">
+            <a href="#">Стать дилером</a>
+          </div>
+          <div class="header__nav">
+            <div class="language-select">
+              <a class="btn btn-link dropdown-toggle dropdownMenu1">
+                Русский </a>
+              <ul class="languages-list">
+                <li><a href="/ru/process-pokupki"> Русский
+                  </a>
+                </li>
+                <li><a href="/en/purchasing-process"> English
+                  </a></li>
+              </ul>
+            </div>
+            <div class="header__login">
+              <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+              <div class="user__box">
+                <div class="user__photo">
+                  <img src="images/data/user.jpg" alt="">
+                </div>
+                <ul class="user__menu">
+                  <li><a href="#">Игорь Киклевич</a></li>
+                  <li><a href="#">Мой гараж</a></li>
+                  <li><a href="#">Выход</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__mobile">
+            <a href="#" class="menu-toggle">Menu</a>
+          </div>
+        </div>
+      </div>
+      <!--top navigation end-->
+      <!--main menu-->
+      <div class="header__bottom">
+        <div class="container">
+          <ul class="main-menu list-unstyled">
+            <li class="main-menu-item">
+              <a href="#">Новые авто</a>
+            </li>
+            <li class="main-menu-item with-submenu">
+              <a href="#">Авто с пробегом</a>
+              <ul class="main-submenu list-unstyled">
+                <li class="main-submenu-item">
+                  <a href="#">Авто с аукционов</a>
+                </li>
+                <li class="main-submenu-item">
+                  <a href="#">Б/У авто в наличии</a>
+                </li>
+                <li class="main-submenu-item">
+                  <a href="#">Последние продажи</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu-item with-submenu">
+              <a href="#">Услуги</a>
+              <ul class="main-submenu list-unstyled">
+                <li class="main-submenu-item">
+                  <a href="#">Авто с аукционов</a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-menu-item">
+              <a href="#">Процесс покупки</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="main-menu-item with-submenu">
+              <a href="#">О нас</a>
+            </li>
+            <li class="main-menu-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="header__search">
+            <button class="search-toggle">
+              <span class="icon search-icon"></span></button>
+            <div class="search-popup">
+              <div class="search">
+                <form>
+                  <input type="text" name="search" placeholder="Поиск">
+                  <input type="submit" value="" class="search-submit">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--main menu end-->
+      <!--mobile box-->
+      <div class="header__mobile-box">
+        <div>
+          <div class="header__phones">
+            <div class="header__phones-box">
+              <a href="tel:+14402125612">+1 (440) 212-5612 (USA)</a>
+              <a href="tel:+74991235732 ">+7 (499) 123-5732 (RUS)</a>
+            </div>
+          </div>
+          <div class="header__social">
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+            <a href="#" target="blank"></a>
+          </div>
+          <div class="header__dealer">
+            <a href="javascript:;" data-fancybox data-src="#modal">Стать дилером</a>
+          </div>
+          <div class="header__search">
+            <form>
+              <input type="text" class="search-input" placeholder="Поиск">
+            </form>
+          </div>
+          <div class="header__nav">
+            <div class="language-select">
+              <a href="#" class="btn btn-link dropdown-toggle dropdownMenu1">
+                Русский </a>
+              <ul class="languages-list">
+                <li><a href="/ru/process-pokupki">
+                    Русский </a>
+                </li>
+                <li><a href="/en/purchasing-process">
+                    English
+                  </a></li>
+              </ul>
+            </div>
+            <div class="header__login">
+              <a href="javascript:;" data-fancybox data-src="#login">Вход</a>
+              <div class="user__box">
+                <div class="user__photo">
+                  <img src="images/data/user.jpg" alt="">
+                </div>
+                <ul class="user__menu">
+                  <li><a href="#">Игорь Киклевич</a></li>
+                  <li><a href="#">Мой гараж</a></li>
+                  <li><a href="#">Выход</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__mobile-menu">
+            <ul class="main-menu list-unstyled">
+              <li class="main-menu-item">
+                <a href="#">Новые авто</a>
+              </li>
+              <li class="main-menu-item with-submenu">
+                <a href="#">Авто с пробегом</a>
+                <ul class="main-submenu list-unstyled">
+                  <li class="main-submenu-item">
+                    <a href="#">Авто с аукционов</a>
+                  </li>
+                  <li class="main-submenu-item">
+                    <a href="#">Б/У авто в наличии</a>
+                  </li>
+                  <li class="main-submenu-item">
+                    <a href="#">Последние продажи</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item with-submenu">
+                <a href="#">Услуги</a>
+                <ul class="main-submenu list-unstyled">
+                  <li class="main-submenu-item">
+                    <a href="#">Авто с аукционов</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Процесс покупки</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="main-menu-item with-submenu">
+                <a href="#">О нас</a>
+              </li>
+              <li class="main-menu-item">
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--mobile box end-->
+    </div>
+  </header>
+  <!-- top-block -->
+  <section class="top-block">
+    <div class="top-block__wrapper" style="background-image: url(images/data/special-preview-img.jpg)">
+      <div class="container">
+        <h1>Вопрос-ответ</h1>
+      </div>
+    </div>
+  </section><!-- top-block end -->
+
+  <main class="main ask__main">
+    <section class="content ask__content">
+      <section>
+        <div class="container">
+          <div class="breadcrumbs">
+            <ul>
+              <li><a href="#">Главная</a></li>
+              <li class="active"><a href="#">Вопрос-ответ</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="ask">
+        <div class="container">
+          <div class="ask__box">
+            <div class="ask__left">
+              <div class="ask__tabs">
+                <div class="ask__tabs-item active" data-id="ask-tab-1">
+                  Какие гарантии вы даете?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-2">
+                  Каковы реальные сроки поставок?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-3">
+                  Как оплатить приобретаемый
+                  автомобиль?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-4">
+                  Можно ли через вас купить машину на eBay Motors, autos.yahoo.com, autotrader.com или cars.com?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-5">
+                  Какую дополнительную информацию о лоте вы можете предоставить?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-6">
+                  Отчего зависит стоимость автомобиля в США?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-7">
+                  Возвращаете ли вы допозит?
+                </div>
+                <div class="ask__tabs-item" data-id="ask-tab-8">
+                  Что происходит если автомобиль проплачен частично, отправлен и покупатель не смог завершить сделку?
+                </div>
+              </div>
+            </div>
+            <div class="ask__right">
+              <div class="ask__right-content active-tab" id="ask-tab-1">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-2">
+                <div class="ask__right-content-title">
+                  Каковы реальные сроки поставок?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-3">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-4">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-5">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-6">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-7">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+              <div class="ask__right-content" id="ask-tab-8">
+                <div class="ask__right-content-title">
+                  Какие гарантии вы даете?
+                </div>
+                <p>Наша компания работает более 14 лет на Американском рынке и рынках СНГ с оборотом 10-13 млн долларов
+                  в
+                  год. Мы связаны партнерскими отношениями с более чем 150 компаниями.
+                </p>
+                <p>Каждая сделка сопровождается официальными договорами с вин номерами, номерами контейнеров и пр.</p>
+                <p>Мы готовы предоставить некоторые из корпоративных документов, дилерскую Лицнезию и ссылку на сайт
+                  секретариата штата где можно убедиться, что наша компания давно существует и успешно работает.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="ask__bottom">
+        <div class="container">
+          <p>Мы собрали список наиболее популярных вопросов, которые часто возникают у наших клиентов. Мы постарались
+            дать на них ответы, опираясь на опыт нашей компании и официальные источники.<br>
+            Если какие-либо вопросы остались без ответов, воспользуйтесь онлайн-формой ниже и задайте свой вопрос!
+          </p>
+          <div class="show-more"><a href="javascript:;" data-fancybox data-src="#popup-zvonok">Задать вопрос</a></div>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__left">
+        <div class="footer__logo">
+          <a href="#" class="footer-logo"><img src="images/data/logo.png" alt=""></a>
+        </div>
+        <div class="footer__socials-box">
+          <ul class="footer-socials list-unstyled list-inline">
+            <li><a href="https://twitter.com/AutoBazarUs" class="soc-link" target="blank"><img
+                  src="images/icons/footer-twitter-icon.png" alt=""></a></li>
+            <li><a href="http://www.youtube.com/subscription_center?add_user=autobazarus" class="soc-link"
+                target="blank"><img src="images/icons/footer-youtube-icon.png" alt=""></a></li>
+            <li><a href="https://www.facebook.com/autobazar.ru" class="soc-link" target="blank"><img
+                  src="images/icons/footer-vk-icon.png" alt=""></a></li>
+            <li><a href="http://vk.com/autobazargroup" class="soc-link" target="blank"><img
+                  src="images/icons/footer-fb-icon.png" alt=""></a></li>
+            <li><a href="https://plus.google.com/+autobazarus/posts" class="soc-link" target="blank"><img
+                  src="images/icons/footer-instagram-icon.png" alt=""></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__sitemap">
+          <a href="#">Карта сайта</a>
+          <a href="javascript:;" data-fancybox data-src="#modal">Стать диллером</a>
+        </div>
+        <div class="footer__search">
+          <form>
+            <input type="text" class="search-input" placeholder="Поиск">
+          </form>
+          <div class="footer-languages">
+            <div class="language-select">
+              <a class="dropdown-toggle dropdownMenu1">
+                Русский </a>
+              <ul class="languages-list">
+                <li><a href="/ru/process-pokupki">Русский </a>
+                </li>
+                <li><a href="/en/purchasing-process"> English
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2002-2019 AutoBazar.US
+    </div>
+  </footer>
+
+  <!--модальные окна-->
+  <div class="modal fade" tabindex="-1" role="dialog" id="login">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="about__title">Вход</div>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Пароль" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <input type="submit" value="Вход">
+                  <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#reg" class="dashed"
+                    onclick="javascript:parent.jQuery.fancybox.close();">Регистрация</a>
+                </div>
+              </div>
+            </div>
+            <br />
+            <div class="form-group fg-flex">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="check">
+                    <label><input type="checkbox"> запомнить меня</label>
+                  </div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="text-right"><a href="javascript:parent.jQuery.fancybox.close();" data-fancybox
+                      data-src="#forget" class="dashed" onclick="javascript:parent.jQuery.fancybox.close();">Забыли
+                      пароль</a></div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="reg">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="about__title">Регистрация</div>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Имя" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="text" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Пароль" class="form-control">
+            </div>
+            <div class="form-group">
+              <input type="password" placeholder="Пароль еще раз" class="form-control">
+            </div>
+            <br />
+            <div class="form-group">
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <input type="submit" class="btn btn-solid btn-primary btn-inline btn2" value="Регистрация">
+                  <a href="javascript:parent.jQuery.fancybox.close();" data-fancybox data-src="#login" class="dashed"
+                    onclick="javascript:parent.jQuery.fancybox.close();">Войти</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" tabindex="-1" role="dialog" id="forget">
+    <div class="modal-dialog " role="document">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="about__title">Напоминание пароля</div>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="E-mail" class="form-control">
+            </div>
+            <div class="form-group">
+              <div class="container-fluid">
+                <div class="row text-center">
+                  <input type="submit" value="Отправить">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <section class="page-bottom__contacts-form  modal" id="popup-zayavka">
+    <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+    <div class="container">
+      <div class="about__title">
+        Заказать обратный звонок
+      </div>
+      <div class="page-bottom-subtitle">
+        Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+        консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+        Спасибо за обращение в нашу компанию.
+      </div>
+      <div class="contacts-form__box">
+        <form>
+          <div class="contacts-form__box-left">
+            <input type="text" placeholder="Имя*">
+            <input type="text" placeholder="Номер телефона*">
+            <input type="text" placeholder="E-mail*">
+            <input type="text" placeholder="Skype">
+          </div>
+          <div class="contacts-form__box-right">
+            <textarea placeholder="Вопрос*"></textarea>
+            <input type="text" placeholder="Recaptcha">
+            <button class="btn-form">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="page-bottom__contacts-form  modal" id="popup-zvonok">
+    <button data-fancybox-close="" class="fancybox-close-small" title="Close"></button>
+    <div class="container">
+      <div class="about__title">
+        Задать вопрос
+      </div>
+      <div class="page-bottom-subtitle">
+        Уважаемые клиенты, Вы можете заказать звонок нашего консультанта, заполнив нижестоящую форму. Наш
+        консультант свяжется с Вами по указанному номеру телефона в течении 48 часов.<br>
+        Спасибо за обращение в нашу компанию.
+      </div>
+      <div class="contacts-form__box">
+        <form>
+          <div class="contacts-form__box-left">
+            <input type="text" placeholder="Имя*">
+            <input type="text" placeholder="Номер телефона*">
+            <input type="text" placeholder="E-mail*">
+            <input type="text" placeholder="Skype">
+          </div>
+          <div class="contacts-form__box-right">
+            <textarea placeholder="Вопрос*"></textarea>
+            <input type="text" placeholder="Recaptcha">
+            <button class="btn-form">Отправить заявку</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="menu-cover"></div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/fotorama.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/fancybox.min.js"></script>
+  <script src="js/jquery.formstyler.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script src="js/manheim/index.js"></script> -->
+  <!-- <script src="js/lib/prototype.js"></script> -->
+
+</body>
+
+</html>
