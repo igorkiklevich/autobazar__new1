@@ -798,9 +798,13 @@
 
     .product-page__table-bottom-panel {
         a {
-            padding: 10px 23px;
+            
             min-width: 135px;
         }
+    }
+    .manheim-product__subtitle{
+        font-size: 19px;
+        line-height: 24px;
     }
 
     .table-top-panel__column {
@@ -1271,6 +1275,9 @@
             font-size: 236px;
             line-height: 296px;
         }
+    }
+    .search-item-content{
+        font-size: 16px;
     }
 }
 
@@ -2240,6 +2247,13 @@
     .news__sort .jq-selectbox li {
         font-size: 15px;
     }
+    .manheim-product__subtitle{
+        font-size: 18px;
+        line-height: 23px;
+    }
+    .search-item-content{
+        font-size: 15px;
+    }
 }
 
 @media(max-width:950px) {
@@ -2342,6 +2356,11 @@
 
     .trailer__classifield-item {
         margin: 0 15px 30px;
+    }
+    .manheim-search-result{
+        .jq-selectbox__select-text{
+            min-width: 200px;
+        }
     }
 
 }
@@ -2491,6 +2510,9 @@
 
     .water__uslugi-items:after {
         width: 715px;
+    }
+    .manheim-search-result .search-item{
+        margin-bottom: 15px;
     }
 }
 
@@ -3282,6 +3304,23 @@
     .trailer__info.bg_gray .landing__blog-item:nth-child(2) .landing__blog-item-title {
         padding-top: 0;
     }
+    .manheim-search-result{
+        nav .row{
+            flex-wrap: wrap;
+            justify-content: center;
+            > div{
+                width: 100%;
+            }
+        }
+        .sortBar{
+            margin-bottom: 20px;
+        }
+    } 
+    .manheim-product__subtitle {
+        font-size: 16px;
+        line-height: 21px;
+    }
+    
 }
 
 @media(max-width:722px) {
@@ -4006,6 +4045,9 @@
         min-width: 31px;
         padding: 6px 5px 4px;
     }
+    .manheim-product table.tm2 tr td{
+        text-transform: none;
+    }
 }
 
 @media(max-width:500px) {
@@ -4429,6 +4471,24 @@
 }
 
 @media(max-width:400px) {
+    .manheim-search-result{
+        .container{
+            padding: 0 15px;
+        }
+        .jq-selectbox+label{
+            margin-left: 0;
+            margin-top: 10px;
+            display: block;
+        }
+        nav{
+            font-size: 14px;
+        }
+        .mui-pagination .next:after{
+            top: 48%;
+            font-size: 20px;
+            line-height: 20px;
+        }
+    }
 
     .contacts__top-column:last-child div,
     .contacts__bottom-column {
@@ -4487,7 +4547,7 @@
 
             &:first-child {
                 margin-right: 0px;
-
+                margin-bottom: 10px;
             }
         }
     }

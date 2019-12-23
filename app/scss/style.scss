@@ -19,6 +19,7 @@
 @import "gallery";
 @import "ask";
 @import "forms";
+@import "manheim";
 
 %after_orange {
     content: '';
@@ -1374,7 +1375,7 @@ ul.type-content {
     display: none;
 }
 
-.main .to-search {
+.manheim__main .to-search {
     line-height: 44px;
     text-transform: uppercase;
     font-weight: 700;
