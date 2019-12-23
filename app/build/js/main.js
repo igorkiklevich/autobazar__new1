@@ -275,4 +275,13 @@ $(document).ready(function() {
     return false;
   });
 
+  var $fotoramaDiv = jQuery('.fotorama').fotorama({
+    click:false,
+    allowfullscreen:true,
+  });
+  var fotorama = $fotoramaDiv.data('fotorama');
+  $('.prod-image .show-all-photos').click(function(){
+    fotorama.requestFullScreen();    
+});
+
 });
