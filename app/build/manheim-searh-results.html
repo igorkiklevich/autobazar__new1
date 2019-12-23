@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="mobile-web-app-capable" content="yes">
-    <title>Процесс Покупки</title>
+    <title>Результаты поиска Manheim</title>
     <meta name="keywords" content="">
     <meta property="og:title" content="" />
     <meta property="og:url" content="" />
@@ -25,7 +25,7 @@
 </head>
 
 <body>
-    <!-- header -->
+
     <header class="header">
         <div class="nav">
             <div class="header__top">
@@ -240,392 +240,274 @@
             </div>
             <!--mobile box end-->
         </div>
-    </header><!-- header end -->
+    </header>
 
+    <!-- top-block -->
     <section class="top-block">
-        <!-- top-block -->
-        <div class="top-block__wrapper" style="background-image: url(images/data/item-preview-img.jpg)">
+        <div class="top-block__wrapper" style="background-image: url(images/data/manheim-preview-img.jpg)">
             <div class="container">
-                <h1>2019 Jeep Wrangler</h1>
+                <h1>Результаты поиска. Manheim</h1>
             </div>
         </div>
     </section><!-- top-block end -->
 
     <!-- content -->
-    <main class="main product-page__main">
-        <section class="content product-page__content">
+    <main class="main">
+
+        <section class="content search-result__content">
             <section>
                 <div class="container">
                     <div class="breadcrumbs">
                         <ul>
                             <li><a href="#">Главная</a></li>
-                            <li><a href="#">Новые авто</a></li>
-                            <li class="active"><a href="#">2019 Jeep Wrangler</a></li>
+                            <li class="active"><a href="#">Manheim</a></li>
                         </ul>
                     </div>
                 </div>
             </section>
-            <section class="product-page__gallery">
+
+            <!-- page content -->
+            <section class="manheim-search-result manheim road-bg">
                 <div class="container">
-                    <div class="product-page__gallery-box">
-                        <div class="product-page__gallery-left">
-                            <div class="prod-image">
-                                <!-- Fotorama -->
-                                <div class="fotorama" data-nav="thumbs" data-width="1000" data-thumbwidth="137"
-                                    data-thumbheight="69" data-thumbborderwidth="0" data-thumbmargin="0"
-                                    data-allowfullscreen="true">
-                                    <img src="images/cars/jeep-wrangler/998_04.jpg" alt="">
-                                    <img src="images/cars/jeep-wrangler/998_04.jpg" alt="">
-                                    <img src="images/cars/jeep-wrangler/998_04.jpg" alt="">
-                                    <img src="images/cars/jeep-wrangler/998_04.jpg" alt="">
-                                    <img src="images/cars/jeep-wrangler/998_04.jpg" alt="">
+                    <!--результаты поиска. Навигация-->
+                    <nav aria-label="Page navigation" class='text-right'>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="sortBar">
+                                    <span>Sort by:</span>
+                                    <select onchange="sortByHeader(this.value); wtSRPSort(this.value, 'REVERSE', '1');">
+                                        <option value="YEAR" selected=selected>Год</option>
+                                        <option value="MAKE">Марка</option>
+                                        <option value="MODEL">Модель</option>
+                                        <option value="VIN">VIN</option>
+                                        <option value="EXTERIOR_COLOR">Цвет кузова</option>
+                                        <option value="INTERIOR_COLOR">Цвет салона</option>
+                                        <option value="ODOMETER">Пробег</option>
+                                        <option value="MMR">MMR</option>
+                                        <option value="GRADE">Рейтинг</option>
+                                        <option value="SALE_END_DATETIME">Дата аукциона</option>
+                                        <option value="INVENTORY">Инвентаризация</option>
+                                        <option value="LOCATION_LANE_RUN">Площадка</option>
+                                        <option value="LANE_RUN">Lane / Run</option>
+                                        <option value="RUN">Run</option>
+                                        <option value="PICKUP_LOCATION">Расположение</option>
+                                        <option value="SELLER">продавец</option>
+                                    </select>
+                                    <label>
+                                        <input type="checkbox" class="mui-sort-reverse"
+                                            onchange="sortByHeader('YEAR', this.checked, 'YEAR'); wtSRPSort(this.value, 'FORWARD', '1');">
+                                        Reverse
+                                    </label>
                                 </div>
-                                <a href="#" class="show-all-photos">
-                                    все фото
-                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mui-pagination">
+                                    Page <input id="goToPageNum1" type="text" value="1"
+                                        onkeyup="if (event.keyCode == 13) $('goToPageBtn1').click();"><button
+                                        type="button" id="goToPageBtn1" class="btn-tertiary-small"
+                                        onclick="validateGoToPage('goToPageNum1', 6609, 25, 1, 'm_ps_srp_pgnum');">Go</button>
+                                    <span> of 6609</span>
+                                    <a class="next" href="javascript:goToPage(2,%206609,%2025,%20'm_ps_srp_next');"></a>
+                                </div>
                             </div>
                         </div>
-                        <div class="product-page__gallery-right">
-                            <div class="product-page__table-top-panel">
-                                <div class="table-top-panel__column"><a href="#"><img src="images/icons/plus-icon.png"
-                                            alt=""></a></div>
-                                <div class="table-top-panel__column"><a href="#"><img
-                                            src="images/icons/calculate-icon.png" alt=""></a></div>
-                                <div class="table-top-panel__column"><a href="#"><img
-                                            src="images/icons/message-icon.png" alt=""></a></div>
-                            </div>
-                            <table class="table table-bordered" id="table-product">
-                                <tbody>
-                                    <tr class="prod-title">
-                                        <td>Номер лота</td>
-                                        <td>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>VIN</td>
-                                        <td></td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цена</td>
-                                        <td class="prod-price"> $ 63 329</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Год</td>
-                                        <td>2019</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Марка</td>
-                                        <td>Jeep</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Модель</td>
-                                        <td>Wrangler Rubicon Unlimited</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Цвет кузова</td>
-                                        <td>Зеленый</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Пробег</td>
-                                        <td>62</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Двигатель</td>
-                                        <td>3.6L V6, 285 hp</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Трансмиссия</td>
-                                        <td>Автоматическая</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="product-page__table-bottom-panel">
-                                <a href="#">Заказать</a>
-                                <a href="#">Задать вопрос</a>
+                    </nav>
+                    <!--Навигация конец-->
+                    <div class="search-item clearfix">
+                        <div class="prod-mobile-info">
+                            <div class="prod-mobile-wrap">
+                                <div class="prod-mobile-image">
+                                    <a href="#"><img src="images/data/photo.jpg" alt=""></a>
+                                </div>
+                                <div class="prod-mobile-text">
+                                    <div class="prod-mobile-title"><a href="#">2020 ACURA MDX AWD TECH 5</a></div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <section class="product-page__information">
-                <div class="container">
-                    <div class="about__title">
-                        ОБЩАЯ ИНФОРМАЦИЯ ПО АВТО
-                    </div>
-                    <div class="about__subtitle">
-                        Список дополнительных тюнинг опций, оборудования и работ проведенных специалистами нашей
-                        компании по усовершенствованию и модификации стандатрного 2019 Jeep Wrangler Rubicon:
-                    </div>
-                    <div class="product-page__information-text">
-                        Боковые ступеньки (левая и правая) - 407$<br>
-                        Монтажный кронштейн для ЛЕД (капот) - 145$<br>
-                        Монтажный кронштейн для ЛЕД (на дугу бампера) - $65<br>
-                        Дуга на передний бампер 1шт. Mopar- $249<br>
-                        Противосолнечная сетка на крышу 1 комплект- $75<br>
-                        Набор аксессуаров 1 комплект - $50<br>
-                        Трубчатые двери 1 комплект- $1275<br>
-                        Лебедка- $1857
-                    </div>
-                    <!-- <div class="search-ext"></div> -->
-                    <div class="show-more"><a href="#" class="to-search" data-text="Свернуть"
-                        data-block=".search-ext">Больше информации</a></div>
-                </div>
-            </section>
-            <section class="bg_gray manheim-block">
-                <div class="container">
-                    <div class="about__title">
-                        Хотите рассмотреть больше вариантов?
-                    </div>
-                    <div class="new-auto__subtitle">
-                        Воспользуйтесь поиском автомобиля по аукциону manheim прямо на нашем сайте
-                    </div>
-                    <div class="video__row">
-                        <div class="video__column">
-                            <img src="images/data/manheim.png" alt="">
-                        </div>
-                        <div class="video__column">
-                            <ul class="type-content">
-                                <li>Бесплатный доступ ко всем лотам </li>
-                                <li>Возможность добавления автомобилей в гараж для сравнения</li>
-                                <li>Удобный поиск среди тысяч предложений аукциона</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="new-auto__search-button">
-                        <a href="#">Перейти к поиску</a>
-                    </div>
-                </div>
-            </section>
-            <section class="page-bottom__form">
-                <div class="page-bottom">
-                    <div class="container">
-                        <div class="about__title">
-                            Не нашли то, что искали?
-                        </div>
-                        <div class="page-bottom-subtitle">
-                            Отправьте заявку на индивидуальный подбор автомобиля
-                        </div>
-                        <div class="page-bottom-form-box">
-                            <form>
-                                <input type="text" placeholder="ФИО*">
-                                <input type="text" placeholder="Номер телефона*">
-                                <input type="text" placeholder="E-mail*">
-                                <button class="btn-form">
-                                    Отправить заявку
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="product-page__related">
-                <div class="container">
-                    <div class="about__title">
-                        Похожие авто
-                    </div>
-                    <div class="carousel">
-                        <div class="carousel__items">
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
+                        <div class="search-item-image"><a href="#"><img src="images/data/g7.jpg" alt=""></a></div>
+                        <div class="search-item-content">
+                            <div class="prod-mobile-title"><a href="#">2020 ACURA MDX AWD TECH 5</a></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>Лот</td>
+                                                <td>2020 ACURA MDX AWD TECH 5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>VIN</td>
+                                                <td class="prod-title">5J8YD4H51LL010409</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет</td>
+                                                <td>	Серебристый | Черный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ожидаемая цена</td>
+                                                <td>MMR: <span class="nr">Нет значения</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    Дата/Аукцион</td>
+                                                <td>Dec 23   10:00 am OVE |  (6 Hours 50 Minutes) Пред.iew</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Отчет о состоянии</td>
+                                                <td><span class="icon-cr">CR 5</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пробег</td>
+                                                <td>401 mi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Двигатель</td>
+                                                <td>6 цилиндра(ов) | Automatic</td>
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                            <div class="carousel__item">
-                                <img src="images/data/carousel-img.jpg" alt="">
-                                <div class="carousel__item-title">
-                                    2019 Ford F-150 Raptor
-                                    <span>81392$</span>
-                                </div>
-                                <a href="#"></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="product-page__reviews bg_gray">
-                <div class="container">
-                    <div class="about__title">
-                        Отзывы наших клиентов
-                    </div>
-                    <div class="reviews__carousel">
-                        <div class="reviews__carousel-items">
-                            <div class="reviews__carousel-item">
-                                <div class="reviews__carousel-content">
-                                    <div class="reviews__carousel-content-text">На протяжении всего времени
-                                        сотрудничества очень активная поддержка клиента,
-                                        пунктуальность, порядочность. Будем и дальше обращаться к вам.</div>
-                                    <div class="reviews__carousel-content-author">
-                                        <span>2018 Ford Raptor</span>
-                                        Бахтиёр, Ташкент, Республика Узбекистан</div>
-                                </div>
-                            </div>
-                            <div class="reviews__carousel-item">
-                                <div class="reviews__carousel-content">
-                                    <div class="reviews__carousel-content-text">На протяжении всего времени
-                                        сотрудничества очень активная поддержка клиента,
-                                        пунктуальность, порядочность. Будем и дальше обращаться к вам.</div>
-                                    <div class="reviews__carousel-content-author">
-                                        <span>2016 Клиент 2</span>
-                                        Бахтиёр, Ташкент, Республика Узбекистан
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    Город</td>
+                                                <td>FL - Manheim Central Florida</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Площадка</td>
+                                                <td>FL - Manheim Central Florida</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Продавец</td>
+                                                <td>LEXUS OF PEMBROKE PINES</td>
+                                            </tr>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="reviews__carousel-item">
-                                <div class="reviews__carousel-content">
-                                    <div class="reviews__carousel-content-text">На протяжении всего времени
-                                        сотрудничества очень активная поддержка клиента,
-                                        пунктуальность, порядочность. Будем и дальше обращаться к вам.</div>
-                                    <div class="reviews__carousel-content-author">
-                                        <span>2005 Клиент 3</span>
-                                        Бахтиёр, Ташкент, Республика Узбекистан
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="reviews__carousel-item">
-                                <div class="reviews__carousel-content">
-                                    <div class="reviews__carousel-content-text">На протяжении всего времени
-                                        сотрудничества очень активная поддержка клиента,
-                                        пунктуальность, порядочность. Будем и дальше обращаться к вам.</div>
-                                    <div class="reviews__carousel-content-author">
-                                        <span>2008 Клиент 5</span>
-                                        Бахтиёр, Ташкент, Республика Узбекистан
-                                    </div>
+                            <div class="search-item-buttons">
+                                <div class="prod-actions">
+                                    <a href="#" class="btn btn-solid">Подробнее</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="show-more"><a href="#">Перейти в раздел</a></div>
                     </div>
+                    <div class="search-item clearfix">
+                        <div class="prod-mobile-info">
+                            <div class="prod-mobile-wrap">
+                                <div class="prod-mobile-image">
+                                    <a href="#"><img src="images/data/photo.jpg" alt=""></a>
+                                </div>
+                                <div class="prod-mobile-text">
+                                    <div class="prod-mobile-title"><a href="#">2020 ACURA MDX AWD TECH 5</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="search-item-image"><a href="#"><img src="images/data/g7.jpg" alt=""></a></div>
+                        <div class="search-item-content">
+                            <div class="prod-mobile-title"><a href="#">2020 ACURA MDX AWD TECH 5</a></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>Лот</td>
+                                                <td>2020 ACURA MDX AWD TECH 5</td>
+                                            </tr>
+                                            <tr>
+                                                <td>VIN</td>
+                                                <td class="prod-title">5J8YD4H51LL010409</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Цвет</td>
+                                                <td>	Серебристый | Черный</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ожидаемая цена</td>
+                                                <td>MMR: <span class="nr">Нет значения</span></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    Дата/Аукцион</td>
+                                                <td>Dec 23   10:00 am OVE |  (6 Hours 50 Minutes) Пред.iew</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Отчет о состоянии</td>
+                                                <td><span class="icon-cr">CR 5</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Пробег</td>
+                                                <td>401 mi</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Двигатель</td>
+                                                <td>6 цилиндра(ов) | Automatic</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="search-item-table">
+                                        <table class="table table-bordered">
+                                            <tr>
+                                                <td>
+                                                    Город</td>
+                                                <td>FL - Manheim Central Florida</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Площадка</td>
+                                                <td>FL - Manheim Central Florida</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Продавец</td>
+                                                <td>LEXUS OF PEMBROKE PINES</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="search-item-buttons">
+                                <div class="prod-actions">
+                                    <a href="#" class="btn btn-solid">Подробнее</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <nav aria-label="Page navigation" class='text-right'>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mui-pagination">
+                                    Page <input id="goToPageNum1" type="text" value="1"
+                                        onkeyup="if (event.keyCode == 13) $('goToPageBtn1').click();"><button
+                                        type="button" id="goToPageBtn1" class="btn-tertiary-small"
+                                        onclick="validateGoToPage('goToPageNum1', 6609, 25, 1, 'm_ps_srp_pgnum');">Go</button>
+                                    <span> of 6609</span>
+                                    <a class="next" href="javascript:goToPage(2,%206609,%2025,%20'm_ps_srp_next');"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </section>
-            <section class="product-page__sklad">
-                <div class="container">
-                    <div class="about__title">
-                        ПОКУПКА И УСЛОВИЯ ОПЛАТЫ СО СКЛАДА В США КОМПАНИИ EXPORT AUTO MOTORS
-                    </div>
-                    <ul class="type-content">
-                        <li>Если Вас заинтересовал этот автомобиль и Вы желаете его приобрести, тогда на этой странице
-                            нажмите кнопку "ЗАКАЗАТЬ АВТОМОБИЛЬ" и заполните форму заказа с указанием всех
-                            регистрационных данных. Если Вы уже регистрировались на нашем сайте, достаточно указать
-                            e-mail и пароль.
-                        </li>
-                        <li>После этого на Ваш e-mail поступит запрос о подтверждении с указанными параметрами заказа.
-                            Только подтвержденные заказы принимаются администраторами в работу. После подтверждения
-                            заказа с Вами свяжется менеджер по продажам компании. С ним Вы оговариваете детали заказа и
-                            задаете любые интересующие Вас вопросы. Также Вы можете запросить любую дополнительную
-                            информацию об интересующем Вас автомобиле.
-                        </li>
-                        <li>Если Вас устраивает выбранный вариант, с Вами заключается Договор купли-продажи, на
-                            основании которого Вы осуществляете банковский перевод на расчетный счет компании или одному
-                            из представителей компании в Вашем регионе. Автомобили со склада подлежат 100% предоплате,
-                            включая стоимость доставки в выбранный Вами порт. Цена автомобилей на складе уже включает в
-                            себя наши комиссионные, но не включает стоимость доставки в порт назначения.
-                        </li>
-                        <li>В течение 3-10 рабочих дней после получения оплаты, автомобиль упаковывается и загружается в
-                            контейнер для отправки в выбранный Вами порт. После затамаживания контейнера Таможенной
-                            Службой США, погрузки его на судно Вы получаете курьерской почтой DHL, FedEx или USPS
-                            оригинал техпаспорта (Title) и погрузочный документ (Dock receipt), в котором указан номер
-                            контейнера и порт назначения. В процессе перемещения контейнера Вы сможете самостоятельно
-                            отслеживать его текущее местонахождение и предполагаемую дату прибытия на сранице <a
-                                href="#">Отслеживание Контейнеров</a>.
-                        </li>
-                    </ul>
-                    <p>Если Вас заинтересовал данный автомобиль или у Вас есть предложение по цене и Вы хотите сделать
-                        заказ - звоните в офис компании по телефонам:<br>
-                        <span>+1.440.212-5612</span><br>
-                        <span>+1.440.840-4191</span>
-                    </p>
-                    <p>
-                        Также, Вы можете связаться с Департаментом продаж компании в режиме On-line, используя<br>
-                        <span>skypename: autobazarus </span>
-                    </p>
-                    <p><span>info@autobazar.us</span></p>
-                    <p>Время работы офиса:
-                        с <span>9:00 </span>до <span>18:00</span> (время Нью Йорк)<br>
-                        с <span>17:00</span> до <span>2:00</span> (время московское)*<br>
-                        Выходной:ВОСКРЕСЕНЬЕ
-                    </p>
-                    <p>По экстренным вопросам Вы можете звонить звонить 7 дней в неделю с 9:00 до 24:00 (время Нью Йорк)
-                    </p>
-                    <p>
-                        <span>*ВНИМАНИЕ!</span><br>
-                        Разница во времени между Россией (Москва) и США (Нью-Йорк и Кливленд) составляет -9 часов.
-                        Например, когда в Москве 9:00 утра, в Кливленде - ПОЛНОЧЬ. Разница во времени между Беларусь и
-                        Украина (Минск и Киев) и США ( Нью-Йорк и Кливленд) составляет -8 часов.
-                    </p>
-                </div>
-            </section>
+            <!-- page content end -->
         </section>
     </main>
     <!-- content end -->
 
-    <!--footer-->
     <footer class="footer">
         <div class="container">
             <div class="footer__left">
@@ -710,7 +592,8 @@
                                 <div class="col-xs-6">
                                     <div class="text-right"><a href="javascript:parent.jQuery.fancybox.close();"
                                             data-fancybox data-src="#forget" class="dashed"
-                                            onclick="javascript:parent.jQuery.fancybox.close();">Забыли пароль</a></div>
+                                            onclick="javascript:parent.jQuery.fancybox.close();">Забыли
+                                            пароль</a></div>
                                 </div>
                             </div>
                         </div>
@@ -838,15 +721,18 @@
     <div class="menu-cover"></div>
 
     <script src="js/jquery.min.js"></script>
+    
     <script src="js/slick.min.js"></script>
     <script src="js/fotorama.js"></script>
     <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/fancybox.min.js"></script>
-    <script src="js/jquery.formstyler.min.js"></script>
     <script src="js/libs.min.js"></script>
+   
+    <!-- <script src="js/lib/prototype.js"></script>
+    <script src="js/manheim/list.js"></script> -->
     <script src="js/main.js"></script>
-    <!-- <script src="js/manheim/index.js"></script> -->
-    <!-- <script src="js/lib/prototype.js"></script> -->
+     <!-- <script src="js/manheim/index.js"></script>  -->
+    
 
 </body>
 
